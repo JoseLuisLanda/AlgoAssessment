@@ -26,7 +26,25 @@ namespace TGS.Challenge
     {
         public string Format(int value)
         {
-            return string.Empty;
+            //convert int to string
+            string valueString = value.ToString();
+            //return decimal if is less than 1000 ---> 999
+            if (valueString.Length <= 2)
+                return valueString;
+            //convert string to char[]
+            char[] charValue = valueString.ToCharArray();
+            string outputString = "";
+
+            for (int charIndex = 1; charIndex <= charValue.Length; charIndex++)
+            {
+                outputString += charValue[charIndex];
+                //verify if charIndex position is divisible by 3 digit then add a comma to output string
+                if (charIndex % 3 == 0)
+                    outputString += ",";
+                
+            }
+
+            return outputString;
         }
     }
 }
