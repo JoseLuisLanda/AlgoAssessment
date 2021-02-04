@@ -19,7 +19,36 @@ namespace TGS.Challenge
     {
       public int Find(int[] numbers)
       {
-        return -99;
+            //loop int array adding the numbers from left to right and compare with the last index value if its higher continue adding form
+            //right to left until that number be equal or higher than first one
+            int sumLeft = 0, sumRight = 0;
+            sumLeft = numbers[0];
+            sumRight = numbers[numbers.Length];
+            int topLoop = numbers.Length - 1;
+
+            for (int indexLeft = 1 ; indexLeft <  topLoop; indexLeft++ )
+            {
+                //1,3,5,5,3
+                //4,5,5,3
+
+                if (sumLeft < sumRight)
+                {
+                    sumLeft += numbers[indexLeft];
+                    
+                }
+                else if (sumLeft > sumRight)
+                {
+                    topLoop -= 1;
+                    indexLeft -= 1;//downgrade value of indexLeft to continue on same index from left
+                    sumRight += numbers[topLoop];
+                    
+                }
+                else {
+                    return numbers[indexLeft];
+                }
+                
+            }
+        return -1;
       }
     }
 }

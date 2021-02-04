@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TGS.Challenge/VowelCount.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TGS.Challenge.Tests/EquivalenceIndexTests.cs">
     <Files>
       <File FileName="TGS.Challenge.Tests/AnagramTests.cs" Line="18" Column="5" />
       <File FileName="TGS.Challenge/Anagram.cs" Line="1" Column="1" />
-      <File FileName="TGS.Challenge/EquivalenceIndex.cs" Line="1" Column="1" />
-      <File FileName="TGS.Challenge/FormatNumber.cs" Line="1" Column="1" />
-      <File FileName="TGS.Challenge/VowelCount.cs" Line="1" Column="1" />
+      <File FileName="TGS.Challenge/EquivalenceIndex.cs" Line="24" Column="17" />
+      <File FileName="TGS.Challenge/FormatNumber.cs" Line="36" Column="38" />
+      <File FileName="TGS.Challenge/VowelCount.cs" Line="20" Column="13" />
+      <File FileName="TGS.Challenge.Tests/EquivalenceIndexTests.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,9 +16,10 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="VowelCount.cs" selected="True" />
             </Node>
-            <Node name="TGS.Challenge.Tests" expanded="True" />
+            <Node name="TGS.Challenge.Tests" expanded="True">
+              <Node name="EquivalenceIndexTests.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
