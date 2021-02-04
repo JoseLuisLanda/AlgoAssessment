@@ -16,7 +16,25 @@ namespace TGS.Challenge
     {
         public int Count(string value)
         {
-            return -1;
+            //convert string to char array
+            char[] charValue = value.ToCharArray();
+            int ocurrences = 0;
+            foreach(char val in charValue)
+            {
+                switch (val)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    ocurrences += 1;
+                    break;
+                    default:
+                        break;
+                }
+            }
+            return ocurrences;
         }
     }
 }
